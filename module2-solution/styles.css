@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+#menu-title {
+  text-align: center
+}
 h1{
   font-family:Helvetica, sans-serif;
   font-size: 60px;
@@ -12,43 +15,30 @@ h2 {
   border: 1px solid black;
 }
   @media (min-width: 992px) {
-h2 {
-  float: left;
-  width: 33.33%;
-}
-}
-#menu-title {
-  text-align: center
-}
-@media (min-width: 768px)  and (max-width:991px) {
  #chicken {
-  width: 50%;
-  float: left;
+  width:33%;
+  float:left;
  }
  #beef {
-  width: 50%;
-  float: right;
-  
- }
- #sushi {
-  width:100%;
-  clear: both;
+  width: 33%;
+  float: left;
  }
 }
-@media (max-width: ≤767px) {
+@media (min-width:768px) and (max-width:991px) {
+
+}
+@media (max-width: 767px) {
   #chicken {
-    float: left;
-    clear:both;
     width: 100%;
+    float: center;
   }
   #beef {
-    float: left;
-    clear: both;
     width: 100%;
+    float: center;
+
   }
   #sushi {
-    float: left;
-    clear: both;
     width: 100%;
+    float: center;
   }
 }
